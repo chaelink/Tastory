@@ -7,7 +7,6 @@ import os
 
 # Create your models here.
 
-
 class Review(models.Model):
 
     STAT_CHOICE = (
