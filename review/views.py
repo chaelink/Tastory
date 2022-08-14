@@ -34,8 +34,7 @@ def detail(request, review_id):
     book = Book.objects.get(book_id=review.book_id)
     user = User.objects.get(user_id=review.user_id)
     profile = Profile.objects.get(user_id=user.user_id)
-    context = {'review': review, 'book': book,
-               'user': user, 'profile': profile}
+    context = {'review': review, 'book': book,'user': user, 'profile': profile}
     return render(request, 'review/review_detail.html', context)
 
 
